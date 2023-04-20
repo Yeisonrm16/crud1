@@ -35,6 +35,12 @@ namespace crud1
                 {
                     new Auxiliar().Guardar(new Login() { Id = 0, Usuario = txtNuevoUsuario.Text.Trim(), Password = txtNuevaClaveUsuario.Text.Trim() });
                     Toast.MakeText(this, "Registro guardado", ToastLength.Long).Show();
+
+                    Intent Index = new Intent(this, typeof(MainActivity));
+                    StartActivity(Index);
+
+                    txtNuevaClaveUsuario.Text = "";
+                    txtNuevoUsuario.Text = "";
                 }
                 else
                 {
@@ -44,6 +50,7 @@ namespace crud1
             catch (Exception ex)
             {
                 Toast.MakeText(this, ex.ToString(), ToastLength.Short).Show();
+
             }
         }
 

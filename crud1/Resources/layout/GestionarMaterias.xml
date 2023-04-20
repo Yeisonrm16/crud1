@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtIdMateria" />
     <TextView
-        android:text="NOMBRE DE LA MATERIA"
+        android:text="NOMBRE DE LA MATERIA *"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
         android:id="@+id/btnActualizarMateria" />
 
      <Button
-        android:text="ELIMIANR MATERIA"
+        android:text="ELIMINAR MATERIA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/colorPrimary"

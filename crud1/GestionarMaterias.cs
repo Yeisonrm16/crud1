@@ -51,6 +51,7 @@ namespace crud1
         {
             try
             {
+                TableMaterias resultado = null;
                 if (!string.IsNullOrEmpty(txtIdMateria.Text.Trim()))
                 {
 
@@ -100,7 +101,7 @@ namespace crud1
                 }
                 else
                 {
-                    Toast.MakeText(this, "Error al axtualizar", ToastLength.Long).Show();
+                    Toast.MakeText(this, "Error al actualizar", ToastLength.Long).Show();
                 }
             }
             catch (Exception ex)
@@ -131,9 +132,10 @@ namespace crud1
                     }
                     else
                     {
-                        Toast.MakeText(this, "Error en la cinsulta,sonsulte otro ID", ToastLength.Short).Show();
+                        Toast.MakeText(this, "Error en la consulta, consulte otro ID", ToastLength.Short).Show();
+                        txtIdMateria.Text = "";
                         txtNombreMateria.Text = "";
-                       
+
 
                     }
 
@@ -162,7 +164,8 @@ namespace crud1
                         NombreMateria = txtNombreMateria.Text.Trim(),
                         
                     });
-                    Toast.MakeText(this, "Registro de docente Guardado", ToastLength.Long).Show();
+                    Toast.MakeText(this, "Registro de materia exitoso", ToastLength.Long).Show();
+                    txtIdMateria.Text = "";
                     txtNombreMateria.Text = "";
                    
                 }

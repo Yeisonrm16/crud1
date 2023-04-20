@@ -141,7 +141,7 @@ namespace crud1
                     }
                     else
                     {
-                        Toast.MakeText(this, "Error en la cinsulta,sonsulte otro ID", ToastLength.Short).Show();
+                        Toast.MakeText(this, "Error en la consulta, consulte otro ID", ToastLength.Short).Show();
                         txtNombreDocente.Text = "";
                         txtFacultadDocente.Text = "";
                         txtMateriaDocente.Text = "";

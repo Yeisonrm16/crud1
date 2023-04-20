@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtIdDocente"/>
     <TextView
-        android:text="Nombre Completo"
+        android:text="Nombre Completo *"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtNombreDocente" />
     <TextView
-        android:text="Facultad"
+        android:text="Facultad *"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtFacultadDocente" />
        <TextView
-        android:text="Materia o asignatura"
+        android:text="Materia o asignatura *"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -68,13 +68,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtMateriaDocente" />
     <TextView
-        android:text="Correo electronico"
+        android:text="Correo electronico *"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/lblValor" />
     <EditText
-        android:inputType="textMultiLine"
+        android:inputType="textEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtEmailDocente" />

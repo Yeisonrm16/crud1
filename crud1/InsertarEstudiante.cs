@@ -147,7 +147,7 @@ namespace crud1
                     }
                     else
                     {
-                        Toast.MakeText(this, "Error en la cinsulta,sonsulte otro ID", ToastLength.Short).Show();
+                        Toast.MakeText(this, "Error en la consulta, consulte otro ID", ToastLength.Short).Show();
                         txtNombre.Text = "";
                         txtFacultad.Text = "";
                         txtCrrUni.Text = "";
@@ -187,6 +187,7 @@ namespace crud1
                         Email = txtEmail.Text.Trim()
                     });
                     Toast.MakeText(this, "Registro Guardado", ToastLength.Long).Show();
+                    txtId.Text = "";
                     txtNombre.Text = "";
                     txtFacultad.Text = "";
                     txtCrrUni.Text = "";
